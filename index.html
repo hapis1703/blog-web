@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a136060a1f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <img src="assets/header-icon.png" alt="" class="header-icon" />
+      <h3 class="title">Cobee The Coder</h3>
+      <nav>
+        <a href="">Project</a>
+        <a href="">Contact</a>
+        <a href="">About Us</a>
+      </nav>
+    </header>
+    <section id="jumbotron">
+      <div class="jumbotron">
+        <h1
+          onmouseover="changeTitle(this)"
+          onmouseout="changeTitleBack(this)"
+          class="jumbotron-title"
+        >
+          Dapatkan Tips Programming Disini!
+        </h1>
+        <div class="header-flex">
+          <div>
+            <h2
+              class="jumbotron-text"
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-duration="2000"
+              data-aos-delay="500"
+              data-aos-easing="ease-in"
+            >
+              Baru di dunia Programming? <br />
+              Belajar lewat pengembangan
+              <span style="color: #f4a261">Game dan Web</span> sederhana!
+            </h2>
+            <div class="mini-text-flex">
+              <p class="mini-text">Belajar programming dasar disini</p>
+              <button id="icon-up" class="icon-up" onclick="changeText()">
+                <i class="far fa-hand-point-up"></i>
+              </button>
+              <button id="icon-down" class="icon-down">
+                <i class="far fa-hand-point-down"></i>
+              </button>
+            </div>
+          </div>
+          <div>
+            <img
+              onmouseover="changeImage(this)"
+              onmouseout="changeImageBack(this)"
+              class="jumbotron-img"
+              src="assets/jumbotron.jpg"
+              alt=""
+              width="auto"
+              height="300"
+              data-aos="fade-right"
+              data-aos-offset="600"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <svg
+      class="wave1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+    >
+      <path
+        fill="#7c8d94"
+        fill-opacity="1"
+        d="M0,96L80,90.7C160,85,320,75,480,96C640,117,800,171,960,181.3C1120,192,1280,160,1360,144L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+      ></path>
+    </svg>
+    <svg
+      class="wave2"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+    >
+      <path
+        fill="#ffffff"
+        fill-opacity="1"
+        d="M0,96L80,90.7C160,85,320,75,480,96C640,117,800,171,960,181.3C1120,192,1280,160,1360,144L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+      ></path>
+    </svg>
+    <section id="slider" class="section-slider">
+      <div class="image-slider">
+        <div class="slide active">
+          <img src="assets/game-development.jpg" alt="" />
+          <div class="slide-text">
+            <h2>Game Development</h2>
+            <p>
+              Instead of playing game all day long, why not create your own?
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="assets/web-development.jpg" alt="" />
+          <div class="slide-text">
+            <h2>Web Development</h2>
+            <p>
+              Every company need website. Take advantage of that opportunity!
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="assets/web-design.jpg" alt="" />
+          <div class="slide-text">
+            <h2>Web Design</h2>
+            <p>Color, Transition, Animation are cool</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="assets/kids-programming.jpg" alt="" />
+          <div class="slide-text">
+            <h2>Kids Programming</h2>
+            <p>Better know earlier with a fun way of arranging blocks</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="assets/apps.jpg" alt="" />
+          <div class="slide-text">
+            <h2>Mobile Apps Development</h2>
+            <p>Mobile apps are very popular and most needed in this world</p>
+          </div>
+        </div>
+        <div class="navigation">
+          <div class="slider-btn active"></div>
+          <div class="slider-btn"></div>
+          <div class="slider-btn"></div>
+          <div class="slider-btn"></div>
+          <div class="slider-btn"></div>
+        </div>
+      </div>
+    </section>
+    <div class="main-content">
+      <aside>
+        <div>
+          <h3 class="aside-title">It's Cobee</h3>
+
+          <img
+            class="profile-picture"
+            src="assets/cobee.png"
+            alt="Cobee"
+            width="150px"
+            height="auto"
+          />
+        </div>
+        <button onclick="dayMode()" class="toogle-dm">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button onclick="nightMode()" class="toogle-dm">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <div class="toggle">
+          <button class="btn" id="green">
+            <i class="fa fa-thumbs-up fa-lg"></i>
+          </button>
+          <button class="btn" id="red">
+            <i class="fa fa-thumbs-down fa-lg"></i>
+          </button>
+        </div>
+        <div class="search-tags-container">
+          <div class="input-tag">
+            <h3 class="aside-title">Search Here</h3>
+            <input type="text" id="myInput" placeholder="Search...." />
+            <span class="addBtn" onclick="newElement()">Search</span>
+          </div>
+
+          <ul id="myUL" class="search-tags-list"></ul>
+        </div>
+      </aside>
+      <div class="content">
+        <article id="maps">
+          <h3 class="article-title">Informasi</h3>
+          <div class="maps">
+            <!-- gunakan iframe dari alamat rumahmu-->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8125178209025!2d106.89527684017136!3d-6.155859060363378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5b17e69633b%3A0x5859f2b731b274cf!2sTimedoor%20Academy%20%7C%20Kursus%20Coding%2C%20Programming%20di%20Kelapa%20Gading%2C%20Jakarta%20Utara%2C%20Indonesia!5e0!3m2!1sid!2sid!4v1696251713003!5m2!1sid!2sid"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </article>
+        <article id="video">
+          <div class="item-video">
+            <h3 class="article-title">What is Coding?</h3>
+            <!-- tambahkan video youtube 1 disini -->\
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/XMZFUnAgOqs?si=XKSXTknuMk2-gbIU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              width="500"
+              height="350"
+            ></iframe>
+            <h3 class="article-title">Coding is Not Difficult!</h3>
+            <!-- tambahkan video youtube 2 disini -->
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/hb7Q33ysCwI?si=xWaCx9yBCmsloZtz"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              width="500"
+              height="350"
+            ></iframe>
+          </div>
+        </article>
+        <article id="my-project">
+          <h3 class="article-title">My Project</h3>
+          <div class="project-container">
+            <div class="project">
+              <img
+                src="assets/lost-skel.jpeg"
+                alt=""
+                width="300px"
+                height="210px"
+              />
+              <h4
+                class="project-title"
+                onclick="window.location.href='https://the-lost-skeleton.vercel.app/'"
+              >
+                The Lost Skeleton
+              </h4>
+              <p class="project-description">
+                Game The Lost Skeleton menggunakan platform Phaser Framework
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="main-footer">
+        <h3 class="info-top">Cobee The Junior Programmer</h3>
+        <div class="social-media">
+          <i class="fab fa-instagram-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fas fa-envelope"></i>
+        </div>
+        <p class="info-center">
+          Copyright &copy; 2021. Cobee. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

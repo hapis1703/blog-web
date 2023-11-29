@@ -21,6 +21,7 @@ kamu
 koin
 lainnya
 lewat
+melihat
 menggunakan
 pengembangan
 peti
@@ -33,3 +34,4 @@ tambahkan
 terdapat
 terjebak
 toogle
+untuk
